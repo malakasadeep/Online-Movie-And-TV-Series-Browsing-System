@@ -1,0 +1,102 @@
+/* Main CSS */
+
+/* Container styles */
+.c234container {
+    background-color: #f1f1f1; /* Set container background color */
+    border-radius: 10px; /* Add border radius for container */
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add box shadow for container */
+    padding: 20px;
+    margin: 120px auto; /* Center container horizontally */
+    max-width: 800px; /* Set maximum width for container */
+    display: flex;
+    align-items: center; /* Center items vertically */
+    width: 60%;
+}
+
+.signup-content{
+	width: 75%;
+}
+/* Form title styles */
+.form-title {
+    font-size: 28px; /* Increase font size */
+    margin-bottom: 20px;
+}
+
+/* Form input styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 18px; /* Increase font size */
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Form checkbox styles */
+.form-group input[type="checkbox"] {
+    margin-right: 10px; /* Add margin between checkbox and label */
+}
+
+.label-agree-term {
+    font-size: 16px; /* Decrease font size for terms label */
+}
+
+/* Form button styles */
+.form-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.form-submit:hover {
+    background-color: #45a049;
+}
+
+/* Sign-up image styles */
+.signup-image {
+    flex: 1; /* Take up one-third of container */
+    margin-right: 20px; /* Add space between image and form */
+}
+
+.signup-image img {
+    width: 100%; /* Ensure image fills container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add border radius to image */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.signup-form {
+    flex: 2; /* Take up two-thirds of container */
+    padding: 0 20px; /* Add spacing between image and form */
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .c234container {
+        flex-direction: column; /* Stack image and form vertically on smaller screens */
+    }
+
+    .signup-image {
+        margin-right: 0; /* Remove margin for smaller screens */
+        margin-bottom: 20px; /* Add space below image */
+    }
+}

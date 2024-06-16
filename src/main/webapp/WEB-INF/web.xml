@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<display-name>Online_Movie</display-name>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+
+	<servlet>
+		<servlet-name>adminLogin</servlet-name>
+		<servlet-class>movie.admin.AdminLoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>adminLogin</servlet-name>
+		<url-pattern>/adlog</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>logout</servlet-name>
+		<servlet-class>movie.admin.LogOutServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>logout</servlet-name>
+		<url-pattern>/out</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>addMovie</servlet-name>
+		<servlet-class>movie.addMovie.MoviesOrSeriesServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>addMovie</servlet-name>
+		<url-pattern>/movie_new</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>movieinsert</servlet-name>
+		<servlet-class>movie.addMovie.MoviesOrSeriesServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>movieinsert</servlet-name>
+		<url-pattern>/movie_insert</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>moviedelete</servlet-name>
+		<servlet-class>movie.addMovie.MoviesOrSeriesServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>moviedelete</servlet-name>
+		<url-pattern>/movie_delete</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>movieeditform</servlet-name>
+		<servlet-class>movie.addMovie.MoviesOrSeriesServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>movieeditform</servlet-name>
+		<url-pattern>/movie_edit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>movieupdate</servlet-name>
+		<servlet-class>movie.addMovie.MoviesOrSeriesServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>movieupdate</servlet-name>
+		<url-pattern>/movie_update</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>movieList</servlet-name>
+		<servlet-class>movie.addMovie.MoviesOrSeriesServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>movieList</servlet-name>
+		<url-pattern>/movie_list</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>viewMovies</servlet-name>
+		<servlet-class>movie.addMovie.MoviesOrSeriesServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>viewMovies</servlet-name>
+		<url-pattern>/movie_view</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>addpkg</servlet-name>
+		<servlet-class>movie.Package.PackageServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>addpkg</servlet-name>
+		<url-pattern>/pkg_new</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>insertpkg</servlet-name>
+		<servlet-class>movie.Package.PackageServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>insertpkg</servlet-name>
+		<url-pattern>/pkg_insert</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>deletepkg</servlet-name>
+		<servlet-class>movie.Package.PackageServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>deletepkg</servlet-name>
+		<url-pattern>/pkg_delete</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>editpkg</servlet-name>
+		<servlet-class>movie.Package.PackageServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>editpkg</servlet-name>
+		<url-pattern>/pkg_edit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>updatepkg</servlet-name>
+		<servlet-class>movie.Package.PackageServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>updatepkg</servlet-name>
+		<url-pattern>/pkg_update</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>pkglist</servlet-name>
+		<servlet-class>movie.Package.PackageServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>pkglist</servlet-name>
+		<url-pattern>/pkg_list</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>pkgview</servlet-name>
+		<servlet-class>movie.Package.PackageServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>pkgview</servlet-name>
+		<url-pattern>/pkg_view</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>reg</servlet-name>
+		<servlet-class>movie.Users.UserRegistrationServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>reg</servlet-name>
+		<url-pattern>/reg</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>log</servlet-name>
+		<servlet-class>movie.Users.UserLoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>log</servlet-name>
+		<url-pattern>/log</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>addreview</servlet-name>
+		<servlet-class>movie.Review.MovieReviewServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>addreview</servlet-name>
+		<url-pattern>/review_new</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>insertreview</servlet-name>
+		<servlet-class>movie.Review.MovieReviewServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>insertreview</servlet-name>
+		<url-pattern>/review_insert</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>deletereview</servlet-name>
+		<servlet-class>movie.Review.MovieReviewServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>deletereview</servlet-name>
+		<url-pattern>/review_delete</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>editreview</servlet-name>
+		<servlet-class>movie.Review.MovieReviewServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>editreview</servlet-name>
+		<url-pattern>/review_edit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>updatereview</servlet-name>
+		<servlet-class>movie.Review.MovieReviewServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>updatereview</servlet-name>
+		<url-pattern>/review_update</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>reviewlist</servlet-name>
+		<servlet-class>movie.Review.MovieReviewServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>reviewlist</servlet-name>
+		<url-pattern>/review_list</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>reviewview</servlet-name>
+		<servlet-class>movie.Review.MovieReviewServlet
+		</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>reviewview</servlet-name>
+		<url-pattern>/review_view</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+    <servlet-name>addbooking</servlet-name>
+    <servlet-class>movie.Booking.PackageBookServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>addbooking</servlet-name>
+    <url-pattern>/book_new</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>insertbooking</servlet-name>
+    <servlet-class>movie.Booking.PackageBookServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>insertbooking</servlet-name>
+    <url-pattern>/book_insert</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>deletebooking</servlet-name>
+    <servlet-class>movie.Booking.PackageBookServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>deletebooking</servlet-name>
+    <url-pattern>/book_delete</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>editbooking</servlet-name>
+    <servlet-class>movie.Booking.PackageBookServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>editbooking</servlet-name>
+    <url-pattern>/book_edit</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>updatebooking</servlet-name>
+    <servlet-class>movie.Booking.PackageBookServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>updatebooking</servlet-name>
+    <url-pattern>/book_update</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>bookinglist</servlet-name>
+    <servlet-class>movie.Booking.PackageBookServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>bookinglist</servlet-name>
+    <url-pattern>/book_list</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>bookingview</servlet-name>
+    <servlet-class>movie.Booking.PackageBookServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>bookingview</servlet-name>
+    <url-pattern>/book_view</url-pattern>
+</servlet-mapping>
+	
+
+
+
+</web-app>
